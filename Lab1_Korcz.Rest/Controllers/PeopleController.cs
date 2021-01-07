@@ -89,7 +89,7 @@ namespace Lab1_Korcz.Rest.Controllers
         [HttpPut("update/{id}")]
         public IActionResult Update([FromRoute] int id, [FromBody] Person personObj)
         {
-            var person = db.People.FirstOrDefault(w => w.PersonId == personObj.PersonId);
+            var person = db.People.FirstOrDefault(w => w.PersonId == id);
             if (person == null)
             {
                 return NotFound();
@@ -98,12 +98,8 @@ namespace Lab1_Korcz.Rest.Controllers
 
             try
             {
-                /*        person.FirstName = Request.Form["firstName"];
-                       person.LastName = Request.Form["lastName"];
-                       person.Password = Request.Form["Password"];
-                       person.Age = Request.Form["Age"];*/
-                person = personObj;
-                person.PersonId = id;
+            person = personObj;
+            person.PersonId = id;
             db.People.Update(person);
             db.SaveChanges();
             return Ok(person);
@@ -113,6 +109,32 @@ namespace Lab1_Korcz.Rest.Controllers
                 LogException(e);
                 return StatusCode(StatusCodes.Status500InternalServerError); ;
             }
+
+        }
+
+        [HttpPut("update")]
+        public IActionResult Update([FromBody] Person personObj)
+        {
+            var person = db.People.FirstOrDefault(w => w.PersonId == personObj.PersonId);
+            if (person == null)
+            {
+                return NotFound();
+            }
+
+
+            try
+            {
+                person = personObj;
+                db.People.Update(person);
+                db.SaveChanges();
+                return Ok(person);
+            }
+            catch (Exception e)
+            {
+                LogException(e);
+                return StatusCode(StatusCodes.Status500InternalServerError); ;
+            }
+
 
         }
 

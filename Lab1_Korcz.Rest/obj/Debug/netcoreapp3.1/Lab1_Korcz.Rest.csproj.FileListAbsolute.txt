@@ -64,3 +64,10 @@
 /Users/maciejkorcz/iot_azure/iot_Maciej_Korcz/lab2/Lab1_Korcz.Rest/obj/Debug/netcoreapp3.1/Lab1_Korcz.Rest.pdb
 /Users/maciejkorcz/iot_azure/iot_Maciej_Korcz/lab2/Lab1_Korcz.Rest/obj/Debug/netcoreapp3.1/Lab1_Korcz.Rest.genruntimeconfig.cache
 /Users/maciejkorcz/iot_azure/iot_Maciej_Korcz/lab2/Lab1_Korcz.Rest/obj/Debug/netcoreapp3.1/scopedcss/bundle/Lab1_Korcz.Rest.styles.css
+G:\API\api\Lab1_Korcz.Rest\obj\Debug\netcoreapp3.1\Lab1_Korcz.Rest.csprojAssemblyReference.cache
+G:\API\api\Lab1_Korcz.Rest\obj\Debug\netcoreapp3.1\Lab1_Korcz.Rest.AssemblyInfoInputs.cache
+G:\API\api\Lab1_Korcz.Rest\obj\Debug\netcoreapp3.1\Lab1_Korcz.Rest.AssemblyInfo.cs
+G:\API\api\Lab1_Korcz.Rest\obj\Debug\netcoreapp3.1\Lab1_Korcz.Rest.csproj.CoreCompileInputs.cache
+G:\API\api\Lab1_Korcz.Rest\obj\Debug\netcoreapp3.1\Lab1_Korcz.Rest.MvcApplicationPartsAssemblyInfo.cache
+G:\API\api\Lab1_Korcz.Rest\obj\Debug\netcoreapp3.1\Lab1_Korcz.Rest.dll
+G:\API\api\Lab1_Korcz.Rest\obj\Debug\netcoreapp3.1\Lab1_Korcz.Rest.pdb
