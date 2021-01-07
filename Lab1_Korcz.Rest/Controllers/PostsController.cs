@@ -42,10 +42,10 @@ namespace Lab1_Korcz.Rest.Controllers
             return Ok(post);
         }
 
-        [HttpPost("add")]
-        public IActionResult POST()
+       [HttpPost("add")]
+        public IActionResult POST([FromBody] Posts postObj)
         {
-            Posts post = new Posts
+           /* Posts post = new Posts
             {
                 UserID = Request.Form["userId"],
                 CreatedDate = Request.Form["createdDate"],
@@ -53,8 +53,8 @@ namespace Lab1_Korcz.Rest.Controllers
                 UserName = Request.Form["UserName"],
                 UserLastName = Request.Form["UserLastName"]
 
-            };
-            db.Post.Add(post);
+            };*/
+            db.Post.Add(postObj);
             db.SaveChanges();
             return Ok(post);
         }
