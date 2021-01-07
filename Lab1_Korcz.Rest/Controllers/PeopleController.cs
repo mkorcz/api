@@ -103,6 +103,7 @@ namespace Lab1_Korcz.Rest.Controllers
                        person.Password = Request.Form["Password"];
                        person.Age = Request.Form["Age"];*/
                 person = personObj;
+                person.PersonId = id;
             db.People.Update(person);
             db.SaveChanges();
             return Ok(person);
